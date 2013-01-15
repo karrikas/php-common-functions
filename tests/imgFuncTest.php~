@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__FILE__) . '/../src/img.func.php';
+require_once dirname(__FILE__) . '/../img.func.php';
 
 class imgFuncTest extends PHPUnit_Framework_TestCase
 {

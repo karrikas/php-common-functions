@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__FILE__) . '/../src/date.func.php';
+require_once dirname(__FILE__) . '/../date.func.php';
 
 class dateFuncTest extends PHPUnit_Framework_TestCase
 {

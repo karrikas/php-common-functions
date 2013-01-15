@@ -9,7 +9,7 @@ class dbFuncTest extends PHPUnit_Framework_TestCase
 		$db_pass = 'test';
 		$database = 'test';
 
-		$cmd = "mysql -u$db_user -p$db_pass -h localhost $database < " . dirname(__FILE__) . "/test.sql";
+		$cmd = "mysql -u$db_user -p$db_pass -h localhost $database < " . dirname(__FILE__) . "/test.sql"
 		exec($cmd);
 		
 		// conectar a db

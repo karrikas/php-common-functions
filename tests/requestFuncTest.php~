@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__FILE__) . '/../src/request.func.php';
+require_once dirname(__FILE__) . '/../request.func.php';
 
 class requestFuncTest extends PHPUnit_Framework_TestCase
 {

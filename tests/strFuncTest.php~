@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__FILE__) . '/../src/str.func.php';
+require_once dirname(__FILE__) . '/../str.func.php';
 
 class strFuncTest extends PHPUnit_Framework_TestCase
 {

@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__FILE__) . '/../src/i18n.func.php';
+require_once dirname(__FILE__) . '/../i18n.func.php';
 
 class i18nFuncTest extends PHPUnit_Framework_TestCase
 {

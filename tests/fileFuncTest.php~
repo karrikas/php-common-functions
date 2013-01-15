@@ -4,12 +4,12 @@ require_once dirname(__FILE__) . '/../src/file.func.php';
 class fileFuncTest extends PHPUnit_Framework_TestCase
 {
 	function testFileSizeShow(){		
-		$strSize = fileSizeShow(dirname(__FILE__) . '/test.jpg');
+		$strSize = fileSizeShow('test.jpg');
 		$this->assertEquals('3.65 kB', $strSize);		
 	}
 	
 	function testFileTypeShow(){
-		$strType = fileTypeShow(dirname(__FILE__) . '/test.jpg');
+		$strType = fileTypeShow('test.jpg');
 		$this->assertEquals('JPG', $strType);
 	}
 	
