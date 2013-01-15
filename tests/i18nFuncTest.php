@@ -4,6 +4,12 @@ require_once dirname(__FILE__) . '/../src/i18n.func.php';
 class i18nFuncTest extends PHPUnit_Framework_TestCase
 {
 	public function testI18nDateShow(){
+		$date = i18nDateShow('0000-00-00 00:00:00', 'es');
+		$this->assertEquals('00/00/0000', $date);
+		
+		$date = i18nDateShow('kua kua', 'es');
+		$this->assertEquals('00/00/0000', $date);
+		
 		$date = i18nDateShow('2011-12-14', 'es');
 		$this->assertEquals('14/12/2011', $date);
 

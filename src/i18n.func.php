@@ -21,8 +21,12 @@ function i18nDateShow($strDate, $strLang, $separator = '/') {
 	);
 	
 	$strPatr = isset($arrPatr[$strLang])? $arrPatr[$strLang] : $arrPatr['en'];
-
-	$strDay = date($strPatr, strtotime($strDate));
+	
+	if (($timestamp = strtotime($strDate)) === false || preg_match('/^0000\-00\-00/', $strDate)) {
+		return str_replace(array('Y','m', 'd'), array('0000','00', '00'), $strPatr);
+	}
+	
+	$strDay = date($strPatr, $timestamp);
 
 	return $strDay;
 }
